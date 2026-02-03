@@ -3,33 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Estudio Jurídico | Nombre Apellido</title>
-  <meta name="description" content="Asesoramiento legal claro y estratégico. Atención presencial y online. Consultas por WhatsApp." />
+  <title>Estudio Jurídico | Dra. Camila Ayelén Sierra</title>
+  <meta name="description" content="Asesoramiento jurídico integral y personalizado. Atención profesional, clara y responsable." />
   <meta name="theme-color" content="#0f2a3a" />
 
-  <!-- Fuentes (Google Fonts) -->
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body class="theme-neutral" id="top">
-
-  <!-- Header -->
+<body id="top">
+  <!-- HEADER -->
   <header class="header">
     <div class="container header__inner">
-
-      <a class="brand" href="#top" aria-label="Ir al inicio">
-        <span class="brand__mark" aria-hidden="true">EJ</span>
-        <span class="brand__text">Estudio Jurídico</span>
+      <a class="brand" href="#inicio" aria-label="Ir a Inicio">
+        <span class="brand__mark" aria-hidden="true">CS</span>
+        <span class="brand__text">Dra. Camila Ayelén Sierra</span>
       </a>
 
-      <!-- Toggle sin JS (checkbox hack) -->
+      <!-- Menú responsive sin JS -->
       <input class="nav__checkbox" type="checkbox" id="nav-toggle" />
       <label class="nav__toggle" for="nav-toggle" aria-label="Abrir/cerrar menú">
         <span></span><span></span><span></span>
@@ -37,25 +32,33 @@
 
       <nav class="nav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
-        <a href="#porque">¿Por qué nosotros?</a>
-        <a href="#areas">Áreas</a>
-        <a href="#equipo">Equipo</a>
+        <a href="#el-estudio">El Estudio</a>
+        <a href="#areas">Areas de practica</a>
         <a href="#contacto" class="btn btn--sm">Contacto</a>
       </nav>
-
     </div>
   </header>
 
   <main>
-
-    <!-- Hero -->
+    <!-- INICIO / BANNER -->
     <section class="hero" id="inicio">
       <div class="container hero__grid">
+
         <div class="hero__copy">
-          <p class="badge">Atención presencial y online · CABA / GBA</p>
-          <h1>Asesoramiento legal claro, responsable y orientado a resultados.</h1>
-          <p class="muted">
-            Analizamos tu situación, definimos alternativas y avanzamos con un plan de trabajo concreto.
+          <div class="section-kicker">
+            <span class="kicon" aria-hidden="true">
+              <!-- Icono "balance" -->
+              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Justicia">
+                <path d="M12 3v18M6 7h12M7.5 7 4 13c0 2 2 3 4 3s4-1 4-3L8.5 7M16.5 7 20 13c0 2-2 3-4 3s-4-1-4-3l3.5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="ktext">Estudio Jurídico</span>
+          </div>
+
+          <h1>Asesoramiento jurídico integral y personalizado</h1>
+
+          <p class="lead">
+            Acompañamiento profesional con claridad, responsabilidad y atención directa en cada caso.
           </p>
 
           <div class="hero__cta">
@@ -63,263 +66,333 @@
             <a class="btn btn--ghost" href="#areas">Ver áreas</a>
           </div>
 
-          <ul class="hero__bullets">
-            <li>Respuesta en el día hábil</li>
-            <li>Honorarios informados de antemano</li>
-            <li>Seguimiento y documentación</li>
-          </ul>
-
-          <div class="hero__meta">
-            <div class="meta__item">
-              <span class="meta__label">Ubicación</span>
-              <span class="meta__value">Tu dirección, CABA</span>
-            </div>
-            <div class="meta__item">
-              <span class="meta__label">Horario</span>
-              <span class="meta__value">Lun a Vie 9 a 18</span>
-            </div>
+          <div class="hero__chips" aria-label="Características">
+            <span class="chip">Atención directa</span>
+            <span class="chip">Comunicación clara</span>
+            <span class="chip">Seguimiento del caso</span>
           </div>
         </div>
 
-        <aside class="hero__card" aria-label="Contacto rápido">
-          <h2>Consulta inicial</h2>
-          <p class="muted">Escribinos por WhatsApp o completá el formulario. Respondemos a la brevedad.</p>
+        <!-- FOTO PROFESIONAL (placeholder) -->
+        <aside class="photo-card" aria-label="Foto profesional">
+          <div class="photo-card__frame">
+            <!-- Reemplazar por imagen:
+                 <img src="assets/img/foto.jpg" alt="Dra. Camila Ayelén Sierra" />
+            -->
+            <div class="photo-card__placeholder">
+              <span class="ph__badge">Foto profesional</span>
+              <span class="ph__text">Insertar aquí una única foto</span>
+            </div>
+          </div>
 
-          <a class="btn btn--wide"
-             href="https://wa.me/54911XXXXXXXX?text=Hola%2C%20quiero%20hacer%20una%20consulta."
-             target="_blank" rel="noopener">
-            WhatsApp
-          </a>
-
-          <div class="divider"></div>
-
-          <ul class="mini-list">
-            <li><strong>Email:</strong> contacto@tudominio.com</li>
-            <li><strong>Tel:</strong> +54 11 XXXX-XXXX</li>
-          </ul>
-
-          <p class="mini__note">La primera orientación puede ser por videollamada.</p>
+          <div class="photo-card__meta">
+            <p class="meta__name">Dra. Camila Ayelén Sierra</p>
+            <p class="meta__role">Abogada</p>
+          </div>
         </aside>
+
       </div>
     </section>
 
-    <!-- Por qué nosotros -->
-    <section class="section section--soft" id="porque">
+    <!-- EL ESTUDIO -->
+    <section class="section" id="el-estudio">
       <div class="container">
         <div class="section__head">
-          <h2>¿Por qué nosotros?</h2>
-          <p class="muted">Trabajo metódico, comunicación clara y foco en resultados.</p>
+          <div class="section-title">
+            <span class="sicon" aria-hidden="true">
+              <!-- Icono "edificio/estudio" -->
+              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="El Estudio">
+                <path d="M4 21V5a2 2 0 0 1 2-2h8v18M14 9h4a2 2 0 0 1 2 2v10M8 7h2M8 11h2M8 15h2M16 13h2M16 17h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h2>El Estudio</h2>
+          </div>
+          <p class="muted">Una modalidad de trabajo centrada en la atención directa y el acompañamiento responsable.</p>
         </div>
 
-        <div class="grid pillars">
-          <article class="pill">
-            <div class="pill__icon" aria-hidden="true">⟡</div>
-            <h3>Diagnóstico</h3>
-            <p class="muted">Relevamiento del caso, documentación y objetivos para definir el camino más conveniente.</p>
-          </article>
-
-          <article class="pill">
-            <div class="pill__icon" aria-hidden="true">⟡</div>
-            <h3>Estrategia</h3>
-            <p class="muted">Opciones disponibles, riesgos, costos y plan recomendado antes de iniciar gestiones.</p>
-          </article>
-
-          <article class="pill">
-            <div class="pill__icon" aria-hidden="true">⟡</div>
-            <h3>Seguimiento</h3>
-            <p class="muted">Ejecución ordenada y comunicación periódica con actualizaciones y próximos pasos.</p>
-          </article>
-        </div>
-
-        <div class="stats" aria-label="Indicadores">
-          <div class="stat">
-            <strong>+10</strong><span>Años</span>
+        <div class="two-col">
+          <div class="panel">
+            <p>
+              Nuestro Estudio Jurídico brinda asesoramiento legal integral y personalizado, con un enfoque claro,
+              humano y profesional. La práctica se caracteriza por un trato cercano y una atención directa,
+              entendiendo que cada situación legal requiere escucha, análisis y un acompañamiento responsable.
+            </p>
+            <p>
+              El estudio se encuentra a cargo de la Dra. Camila Ayelén Sierra, quien interviene personalmente en cada caso,
+              acompañando a los clientes desde el primer contacto y durante todo el proceso legal. Esta modalidad de trabajo
+              permite un seguimiento atento y una comunicación clara, orientada a que cada persona pueda comprender su situación
+              y tomar decisiones informadas con tranquilidad.
+            </p>
+            <p>
+              La labor profesional se apoya en la confianza, la ética y el compromiso con las necesidades concretas de cada cliente,
+              priorizando soluciones jurídicas claras, personalizadas y acordes a cada situación particular.
+            </p>
           </div>
-          <div class="stat">
-            <strong>+500</strong><span>Consultas</span>
-          </div>
-          <div class="stat">
-            <strong>24/48h</strong><span>Respuesta</span>
+
+          <div class="facts">
+            <div class="fact">
+              <div class="fact__icon" aria-hidden="true">
+                <!-- Icono "mano/compromiso" -->
+                <svg viewBox="0 0 24 24" class="ico-sm">
+                  <path d="M8 13V7a2 2 0 0 1 4 0v6M12 12V6a2 2 0 0 1 4 0v7M16 12V8a2 2 0 0 1 4 0v8c0 3-2 5-5 5H11c-3 0-5-2-5-5v-3a2 2 0 0 1 2-2h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="fact__title">Atención directa</p>
+                <p class="muted fact__text">Intervención personal en cada etapa del caso.</p>
+              </div>
+            </div>
+
+            <div class="fact">
+              <div class="fact__icon" aria-hidden="true">
+                <!-- Icono "chat/claridad" -->
+                <svg viewBox="0 0 24 24" class="ico-sm">
+                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="fact__title">Comunicación clara</p>
+                <p class="muted fact__text">Explicación simple para decisiones informadas.</p>
+              </div>
+            </div>
+
+            <div class="fact">
+              <div class="fact__icon" aria-hidden="true">
+                <!-- Icono "escudo/ética" -->
+                <svg viewBox="0 0 24 24" class="ico-sm">
+                  <path d="M12 2 20 6v7c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <p class="fact__title">Ética y compromiso</p>
+                <p class="muted fact__text">Trabajo responsable orientado a soluciones.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Áreas -->
-    <section class="section" id="areas">
+    <!-- ÁREAS DE PRÁCTICA -->
+    <section class="section section--soft" id="areas">
       <div class="container">
         <div class="section__head">
-          <h2>Áreas de práctica</h2>
-          <p class="muted">Seleccioná el área y coordinamos una consulta para revisar tu caso.</p>
+          <div class="section-title">
+            <span class="sicon" aria-hidden="true">
+              <!-- Icono "maletín" -->
+              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Áreas de práctica">
+                <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h2>Areas de practica</h2>
+          </div>
+          <p class="muted">Asesoramiento y representación en las siguientes materias.</p>
         </div>
 
-        <div class="grid cards">
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⟡</div>
-            <h3>Divorcios</h3>
-            <p class="muted">Convenio regulador, alimentos, régimen de comunicación y acuerdos.</p>
+        <div class="grid areas">
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Auto -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M3 14v3a2 2 0 0 0 2 2h1m13-5v3a2 2 0 0 1-2 2h-1M6 14l1-4a3 3 0 0 1 3-2h4a3 3 0 0 1 3 2l1 4M5 14h14M7 19h0M17 19h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Accidentes de Tránsito</h3>
+            <p class="muted">
+              Brindamos asesoramiento y representación legal en accidentes de tránsito, realizando reclamos judiciales y extrajudiciales ante compañías de seguros. Acompañamos cada caso de manera personalizada, con claridad y compromiso, desde el primer contacto hasta la resolución del conflicto.
+            </p>
           </article>
 
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⟡</div>
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Casco -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M4 13a8 8 0 1 1 16 0v4H4v-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 17h-4a2 2 0 0 1-2-2v-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Accidentes Laborales</h3>
+            <p class="muted">
+              Asistencia legal en casos de accidentes de trabajo y enfermedades laborales, orientada a la defensa de los derechos del trabajador y a la obtención de una reparación justa.
+            </p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Portafolio -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Derecho Laboral</h3>
+            <p class="muted">
+              Asesoramiento y representación en conflictos laborales, despidos, indemnizaciones y demás cuestiones vinculadas a la relación de trabajo, con una mirada profesional y responsable.
+            </p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Cruz salud -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M12 21s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 9v6M9 12h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Amparos de Salud</h3>
+            <p class="muted">
+              Asesoramiento y representación en acciones de amparo de salud frente a obras sociales, prepagas y organismos de salud, con el objetivo de garantizar el acceso oportuno a prestaciones médicas, tratamientos y medicamentos.
+            </p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Carrito/consumo -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M6 6h15l-2 9H7L6 6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6 5 3H2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 20h0M17 20h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Defensa del Consumidor</h3>
+            <p class="muted">
+              Asistencia legal en reclamos vinculados a relaciones de consumo, servicios deficientes, incumplimientos contractuales y prácticas abusivas, priorizando soluciones eficaces y la protección de los derechos del consumidor.
+            </p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Documento/contrato -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 11h6M9 15h6M9 19h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Contratos</h3>
+            <p class="muted">
+              Redacción, revisión y asesoramiento en contratos civiles y comerciales, brindando soluciones claras y seguras para prevenir conflictos y proteger los intereses de las partes.
+            </p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Herencia / árbol -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M12 2v20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                <path d="M7 7c0-2 2-4 5-4s5 2 5 4-2 4-5 4-5-2-5-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 16h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3>Sucesiones</h3>
-            <p class="muted">Declaratoria, bienes, inscripciones y gestión del trámite.</p>
+            <p class="muted">
+              Asesoramiento integral en procesos sucesorios, acompañando a los interesados de manera clara y ordenada en cada etapa del trámite.
+            </p>
           </article>
 
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⟡</div>
-            <h3>Derecho de familia</h3>
-            <p class="muted">Cuidados personales, medidas urgentes y procesos vinculados.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⟡</div>
-            <h3>Defensa del consumidor</h3>
-            <p class="muted">Reclamos, mediación, incumplimientos, daños y perjuicios.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⟡</div>
-            <h3>Salud</h3>
-            <p class="muted">Amparos, obras sociales, prepagas, cobertura y prestaciones.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⟡</div>
-            <h3>Laboral</h3>
-            <p class="muted">Despidos, diferencias salariales, acuerdos y accidentes.</p>
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <!-- Familia -->
+              <svg viewBox="0 0 24 24" class="ico-sm">
+                <path d="M9 11a3 3 0 1 0-6 0v2a4 4 0 0 0 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11a3 3 0 1 0-6 0v2a4 4 0 0 1-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10a3 3 0 1 0 4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 21v-2a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Derecho de Familia</h3>
+            <p class="muted">
+              Acompañamiento legal en conflictos familiares, como divorcios, alimentos, régimen de comunicación y cuidado personal, priorizando soluciones responsables y el bienestar de las personas involucradas.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Equipo -->
-    <section class="section section--soft" id="equipo">
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
       <div class="container">
         <div class="section__head">
-          <h2>Nuestro equipo</h2>
-          <p class="muted">Profesionales con enfoque práctico y trato respetuoso.</p>
-        </div>
-
-        <div class="grid team">
-          <article class="person">
-            <div class="person__photo" aria-hidden="true">
-              <!-- Si tenés foto: reemplazá por <img src="assets/img/equipo-1.jpg" ...> -->
-              <span>NA</span>
-            </div>
-            <div>
-              <h3 class="person__name">Nombre Apellido</h3>
-              <p class="muted person__role">Socia · Derecho Civil y Comercial</p>
-            </div>
-          </article>
-
-          <article class="person">
-            <div class="person__photo" aria-hidden="true">
-              <span>NB</span>
-            </div>
-            <div>
-              <h3 class="person__name">Nombre Apellido</h3>
-              <p class="muted person__role">Socio · Derecho Empresarial</p>
-            </div>
-          </article>
-
-          <article class="person">
-            <div class="person__photo" aria-hidden="true">
-              <span>NC</span>
-            </div>
-            <div>
-              <h3 class="person__name">Nombre Apellido</h3>
-              <p class="muted person__role">Asociada · Derecho de Familia</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section__head">
-          <h2>Preguntas frecuentes</h2>
-          <p class="muted">Información general para orientar el primer contacto.</p>
-        </div>
-
-        <div class="accordion">
-          <details class="acc">
-            <summary>¿Cómo es la primera consulta?</summary>
-            <p>Revisamos tu situación, definimos alternativas y te indicamos próximos pasos y documentación necesaria.</p>
-          </details>
-
-          <details class="acc">
-            <summary>¿La atención puede ser online?</summary>
-            <p>Sí. La consulta puede ser por videollamada y el intercambio de documentación se realiza en forma digital.</p>
-          </details>
-
-          <details class="acc">
-            <summary>¿Cómo se determinan los honorarios?</summary>
-            <p>Dependen del tipo de caso y su complejidad. Se informan antes de iniciar cualquier gestión.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="section section--soft" id="contacto">
-      <div class="container contact">
-        <div class="contact__info">
-          <h2>Contacto</h2>
-          <p class="muted">Completá el formulario o escribinos por WhatsApp. Respondemos en el día hábil.</p>
-
-          <ul class="list">
-            <li><strong>WhatsApp:</strong> +54 11 XXXX-XXXX</li>
-            <li><strong>Email:</strong> contacto@tudominio.com</li>
-            <li><strong>Dirección:</strong> Tu dirección, CABA</li>
-            <li><strong>Horario:</strong> Lun a Vie 9 a 18</li>
-          </ul>
-
-          <div class="contact__cta">
-            <a class="btn"
-               href="https://wa.me/54911XXXXXXXX?text=Hola%2C%20quiero%20hacer%20una%20consulta."
-               target="_blank" rel="noopener">
-              WhatsApp
-            </a>
+          <div class="section-title">
+            <span class="sicon" aria-hidden="true">
+              <!-- Icono "contacto" -->
+              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Contacto">
+                <path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 8l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 6h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h2>Contacto</h2>
           </div>
+          <p class="muted">Escribinos por WhatsApp o completá el formulario. Respondemos a la brevedad.</p>
         </div>
 
-        <!-- Form: podés usar Formspree o tu backend -->
-        <form class="form" method="post" action="https://formspree.io/f/TU_ID_AQUI">
-          <label>
-            Nombre
-            <input name="nombre" type="text" autocomplete="name" required />
-          </label>
+        <div class="contact">
+          <div class="contact__panel">
+            <h3>Vías de contacto</h3>
 
-          <label>
-            Email
-            <input name="email" type="email" autocomplete="email" required />
-          </label>
+            <div class="contact__items">
+              <a class="contact__item" href="https://wa.me/54911XXXXXXXX?text=Hola%2C%20quiero%20hacer%20una%20consulta."
+                 target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true">💬</span>
+                <span>
+                  <span class="contact__label">WhatsApp</span>
+                  <span class="contact__value">+54 11 XXXX-XXXX</span>
+                </span>
+              </a>
 
-          <label>
-            Tema
-            <select name="tema" required>
-              <option value="" selected disabled>Elegí una opción</option>
-              <option>Divorcio</option>
-              <option>Sucesión</option>
-              <option>Derecho de familia</option>
-              <option>Consumidor</option>
-              <option>Salud</option>
-              <option>Laboral</option>
-              <option>Otro</option>
-            </select>
-          </label>
+              <a class="contact__item" href="mailto:contacto@tudominio.com">
+                <span class="contact__icon" aria-hidden="true">✉️</span>
+                <span>
+                  <span class="contact__label">Email</span>
+                  <span class="contact__value">contacto@tudominio.com</span>
+                </span>
+              </a>
+            </div>
 
-          <label>
-            Mensaje
-            <textarea name="mensaje" rows="5" required placeholder="Describí brevemente tu consulta..."></textarea>
-          </label>
+            <div class="note">
+              <p class="muted">
+                No se publica dirección física. La atención puede coordinarse de forma online o en punto a convenir.
+              </p>
+            </div>
+          </div>
 
-          <button class="btn btn--wide" type="submit">Enviar</button>
-          <p class="form__note muted">Al enviar aceptás que te contactemos por los medios provistos.</p>
-        </form>
+          <form class="form" method="post" action="https://formspree.io/f/TU_ID_AQUI">
+            <label>
+              Nombre
+              <input name="nombre" type="text" autocomplete="name" required />
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+
+            <label>
+              Consulta
+              <select name="tema" required>
+                <option value="" selected disabled>Seleccionar</option>
+                <option>Accidentes de Tránsito</option>
+                <option>Accidentes Laborales</option>
+                <option>Derecho Laboral</option>
+                <option>Amparos de Salud</option>
+                <option>Defensa del Consumidor</option>
+                <option>Contratos</option>
+                <option>Sucesiones</option>
+                <option>Derecho de Familia</option>
+                <option>Otro</option>
+              </select>
+            </label>
+
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="5" required placeholder="Describí brevemente tu consulta..."></textarea>
+            </label>
+
+            <button class="btn btn--wide" type="submit">Enviar</button>
+            <p class="form__note muted">Al enviar aceptás que te contactemos por los medios provistos.</p>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -327,8 +400,8 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="muted">© 2026 Estudio Jurídico. Todos los derechos reservados.</p>
-      <a class="muted" href="#top">Volver arriba ↑</a>
+      <p class="muted">© <span id="year"></span> Dra. Camila Ayelén Sierra. Todos los derechos reservados.</p>
+      <a class="muted" href="#inicio">Volver arriba ↑</a>
     </div>
   </footer>
 
@@ -339,5 +412,9 @@
     WhatsApp
   </a>
 
+  <script>
+    // solo para el año del footer (no afecta a Pages)
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

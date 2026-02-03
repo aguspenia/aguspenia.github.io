@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Estudio Jurídico | Dra. Camila Ayelén Sierra</title>
-  <meta name="description" content="Asesoramiento jurídico integral y personalizado. Atención profesional, clara y responsable." />
+  <meta name="description" content="Asesoramiento jurídico integral y personalizado. Atención directa, clara y profesional." />
   <meta name="theme-color" content="#0f2a3a" />
 
-  <!-- Fuentes -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 
 <body id="top">
-  <!-- HEADER -->
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Ir a Inicio">
@@ -24,7 +24,7 @@
         <span class="brand__text">Dra. Camila Ayelén Sierra</span>
       </a>
 
-      <!-- Menú responsive sin JS -->
+      <!-- Menú mobile sin JS -->
       <input class="nav__checkbox" type="checkbox" id="nav-toggle" />
       <label class="nav__toggle" for="nav-toggle" aria-label="Abrir/cerrar menú">
         <span></span><span></span><span></span>
@@ -40,31 +40,27 @@
   </header>
 
   <main>
-    <!-- INICIO / BANNER -->
-    <section class="hero" id="inicio">
-      <div class="container hero__grid">
 
-        <div class="hero__copy">
-          <div class="section-kicker">
-            <span class="kicon" aria-hidden="true">
-              <!-- Icono "balance" -->
-              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Justicia">
-                <path d="M12 3v18M6 7h12M7.5 7 4 13c0 2 2 3 4 3s4-1 4-3L8.5 7M16.5 7 20 13c0 2-2 3-4 3s-4-1-4-3l3.5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <span class="ktext">Estudio Jurídico</span>
+    <!-- INICIO / HERO con slideshow -->
+    <section class="hero hero--slideshow" id="inicio" aria-label="Inicio">
+      <div class="hero__slides" aria-hidden="true">
+        <div class="hero__slide hero__slide--a"></div>
+        <div class="hero__slide hero__slide--b"></div>
+      </div>
+
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__left">
+          <div class="hero__brand">
+            <div class="hero__logo" aria-hidden="true">CS</div>
+            <div class="hero__brandText">
+              <div class="hero__brandName">Dra. Camila Ayelén Sierra</div>
+              <div class="hero__brandSub">Estudio Jurídico</div>
+            </div>
           </div>
 
-          <h1>Asesoramiento jurídico integral y personalizado</h1>
-
-          <p class="lead">
-            Acompañamiento profesional con claridad, responsabilidad y atención directa en cada caso.
-          </p>
-
-          <div class="hero__cta">
-            <a class="btn" href="#contacto">Solicitar consulta</a>
-            <a class="btn btn--ghost" href="#areas">Ver áreas</a>
-          </div>
+          <h1 class="hero__title">Asesoramiento jurídico integral y personalizado</h1>
 
           <div class="hero__chips" aria-label="Características">
             <span class="chip">Atención directa</span>
@@ -73,24 +69,36 @@
           </div>
         </div>
 
-        <!-- FOTO PROFESIONAL (placeholder) -->
-        <aside class="photo-card" aria-label="Foto profesional">
-          <div class="photo-card__frame">
-            <!-- Reemplazar por imagen:
-                 <img src="assets/img/foto.jpg" alt="Dra. Camila Ayelén Sierra" />
-            -->
-            <div class="photo-card__placeholder">
-              <span class="ph__badge">Foto profesional</span>
-              <span class="ph__text">Insertar aquí una única foto</span>
-            </div>
-          </div>
+        <div class="hero__right">
+          <p class="hero__tagline">
+            Excelencia, claridad e inmediatez en cada solución jurídica
+          </p>
 
-          <div class="photo-card__meta">
-            <p class="meta__name">Dra. Camila Ayelén Sierra</p>
-            <p class="meta__role">Abogada</p>
+          <div class="hero__cta">
+            <a class="btn" href="#contacto">Solicitar consulta</a>
+            <a class="btn btn--ghost" href="#areas">Ver áreas</a>
           </div>
-        </aside>
+        </div>
+      </div>
 
+      <!-- Cards rápidas debajo (estilo referencia) -->
+      <div class="container hero__quick">
+        <a class="quickCard" href="#areas">
+          <span class="quickCard__icon" aria-hidden="true">🚗</span>
+          <span class="quickCard__text">Accidentes de Tránsito</span>
+        </a>
+        <a class="quickCard" href="#areas">
+          <span class="quickCard__icon" aria-hidden="true">🛡️</span>
+          <span class="quickCard__text">Amparos de Salud</span>
+        </a>
+        <a class="quickCard" href="#areas">
+          <span class="quickCard__icon" aria-hidden="true">🧾</span>
+          <span class="quickCard__text">Contratos</span>
+        </a>
+        <a class="quickCard" href="#areas">
+          <span class="quickCard__icon" aria-hidden="true">👨‍👩‍👧‍👦</span>
+          <span class="quickCard__text">Derecho de Familia</span>
+        </a>
       </div>
     </section>
 
@@ -100,101 +108,101 @@
         <div class="section__head">
           <div class="section-title">
             <span class="sicon" aria-hidden="true">
-              <!-- Icono "edificio/estudio" -->
+              <!-- edificio -->
               <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="El Estudio">
                 <path d="M4 21V5a2 2 0 0 1 2-2h8v18M14 9h4a2 2 0 0 1 2 2v10M8 7h2M8 11h2M8 15h2M16 13h2M16 17h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
             <h2>El Estudio</h2>
           </div>
-          <p class="muted">Una modalidad de trabajo centrada en la atención directa y el acompañamiento responsable.</p>
         </div>
 
         <div class="two-col">
           <div class="panel">
             <p>
-              Nuestro Estudio Jurídico brinda asesoramiento legal integral y personalizado, con un enfoque claro,
-              humano y profesional. La práctica se caracteriza por un trato cercano y una atención directa,
-              entendiendo que cada situación legal requiere escucha, análisis y un acompañamiento responsable.
+              Nuestro Estudio Jurídico brinda asesoramiento legal integral y personalizado, con un enfoque claro, humano y profesional. La práctica se caracteriza por un trato cercano y una atención directa, entendiendo que cada situación legal requiere escucha, análisis y un acompañamiento responsable.
             </p>
             <p>
-              El estudio se encuentra a cargo de la Dra. Camila Ayelén Sierra, quien interviene personalmente en cada caso,
-              acompañando a los clientes desde el primer contacto y durante todo el proceso legal. Esta modalidad de trabajo
-              permite un seguimiento atento y una comunicación clara, orientada a que cada persona pueda comprender su situación
-              y tomar decisiones informadas con tranquilidad.
+              El estudio se encuentra a cargo de la Dra. Camila Ayelén Sierra, quien interviene personalmente en cada caso, acompañando a los clientes desde el primer contacto y durante todo el proceso legal. Esta modalidad de trabajo permite un seguimiento atento y una comunicación clara, orientada a que cada persona pueda comprender su situación y tomar decisiones informadas con tranquilidad.
             </p>
             <p>
-              La labor profesional se apoya en la confianza, la ética y el compromiso con las necesidades concretas de cada cliente,
-              priorizando soluciones jurídicas claras, personalizadas y acordes a cada situación particular.
+              La labor profesional se apoya en la confianza, la ética y el compromiso con las necesidades concretas de cada cliente, priorizando soluciones jurídicas claras, personalizadas y acordes a cada situación particular.
             </p>
           </div>
 
-          <div class="facts">
-            <div class="fact">
-              <div class="fact__icon" aria-hidden="true">
-                <!-- Icono "mano/compromiso" -->
-                <svg viewBox="0 0 24 24" class="ico-sm">
-                  <path d="M8 13V7a2 2 0 0 1 4 0v6M12 12V6a2 2 0 0 1 4 0v7M16 12V8a2 2 0 0 1 4 0v8c0 3-2 5-5 5H11c-3 0-5-2-5-5v-3a2 2 0 0 1 2-2h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <p class="fact__title">Atención directa</p>
-                <p class="muted fact__text">Intervención personal en cada etapa del caso.</p>
+          <aside class="profile" aria-label="Perfil profesional">
+            <div class="profile__frame">
+              <!-- Reemplazar por foto:
+              <img src="assets/img/foto.jpg" alt="Dra. Camila Ayelén Sierra">
+              -->
+              <div class="profile__placeholder">
+                <span class="ph__badge">Foto profesional</span>
+                <span class="ph__text">Reservado para una sola imagen</span>
               </div>
             </div>
 
-            <div class="fact">
-              <div class="fact__icon" aria-hidden="true">
-                <!-- Icono "chat/claridad" -->
-                <svg viewBox="0 0 24 24" class="ico-sm">
-                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <div class="facts">
+              <div class="fact">
+                <div class="fact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="ico-sm">
+                    <path d="M8 13V7a2 2 0 0 1 4 0v6M12 12V6a2 2 0 0 1 4 0v7M16 12V8a2 2 0 0 1 4 0v8c0 3-2 5-5 5H11c-3 0-5-2-5-5v-3a2 2 0 0 1 2-2h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="fact__title">Atención directa</p>
+                  <p class="muted fact__text">Intervención personal en cada caso.</p>
+                </div>
               </div>
-              <div>
-                <p class="fact__title">Comunicación clara</p>
-                <p class="muted fact__text">Explicación simple para decisiones informadas.</p>
+
+              <div class="fact">
+                <div class="fact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="ico-sm">
+                    <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="fact__title">Comunicación clara</p>
+                  <p class="muted fact__text">Acompañamiento comprensible y responsable.</p>
+                </div>
+              </div>
+
+              <div class="fact">
+                <div class="fact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="ico-sm">
+                    <path d="M12 2 20 6v7c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="fact__title">Ética y compromiso</p>
+                  <p class="muted fact__text">Confianza, responsabilidad y dedicación.</p>
+                </div>
               </div>
             </div>
-
-            <div class="fact">
-              <div class="fact__icon" aria-hidden="true">
-                <!-- Icono "escudo/ética" -->
-                <svg viewBox="0 0 24 24" class="ico-sm">
-                  <path d="M12 2 20 6v7c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <p class="fact__title">Ética y compromiso</p>
-                <p class="muted fact__text">Trabajo responsable orientado a soluciones.</p>
-              </div>
-            </div>
-
-          </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- ÁREAS DE PRÁCTICA -->
+    <!-- AREAS DE PRACTICA -->
     <section class="section section--soft" id="areas">
       <div class="container">
         <div class="section__head">
           <div class="section-title">
             <span class="sicon" aria-hidden="true">
-              <!-- Icono "maletín" -->
-              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Áreas de práctica">
+              <!-- maletín -->
+              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Areas de practica">
                 <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
               </svg>
             </span>
             <h2>Areas de practica</h2>
           </div>
-          <p class="muted">Asesoramiento y representación en las siguientes materias.</p>
         </div>
 
         <div class="grid areas">
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Auto -->
+              <!-- auto -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M3 14v3a2 2 0 0 0 2 2h1m13-5v3a2 2 0 0 1-2 2h-1M6 14l1-4a3 3 0 0 1 3-2h4a3 3 0 0 1 3 2l1 4M5 14h14M7 19h0M17 19h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -207,7 +215,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Casco -->
+              <!-- casco -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M4 13a8 8 0 1 1 16 0v4H4v-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M20 17h-4a2 2 0 0 1-2-2v-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -221,7 +229,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Portafolio -->
+              <!-- portafolio -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -234,7 +242,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Cruz salud -->
+              <!-- salud -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M12 21s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12 9v6M9 12h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
@@ -248,7 +256,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Carrito/consumo -->
+              <!-- carrito -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M6 6h15l-2 9H7L6 6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M6 6 5 3H2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -263,7 +271,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Documento/contrato -->
+              <!-- documento -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9 11h6M9 15h6M9 19h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
@@ -277,7 +285,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Herencia / árbol -->
+              <!-- árbol -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M12 2v20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                 <path d="M7 7c0-2 2-4 5-4s5 2 5 4-2 4-5 4-5-2-5-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -292,7 +300,7 @@
 
           <article class="area-card">
             <div class="area-card__icon" aria-hidden="true">
-              <!-- Familia -->
+              <!-- familia -->
               <svg viewBox="0 0 24 24" class="ico-sm">
                 <path d="M9 11a3 3 0 1 0-6 0v2a4 4 0 0 0 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M21 11a3 3 0 1 0-6 0v2a4 4 0 0 1-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -315,11 +323,10 @@
         <div class="section__head">
           <div class="section-title">
             <span class="sicon" aria-hidden="true">
-              <!-- Icono "contacto" -->
+              <!-- mail -->
               <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Contacto">
                 <path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M3 8l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7 6h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
               </svg>
             </span>
             <h2>Contacto</h2>
@@ -405,7 +412,6 @@
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
   <a class="wa-float"
      href="https://wa.me/54911XXXXXXXX?text=Hola%2C%20quiero%20hacer%20una%20consulta."
      target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
@@ -413,8 +419,8 @@
   </a>
 
   <script>
-    // solo para el año del footer (no afecta a Pages)
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <script src="assets/js/hero-rotator.js"></script>
 </body>
 </html>

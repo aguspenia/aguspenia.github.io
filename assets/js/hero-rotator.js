@@ -1,51 +1,51 @@
-// Menu responsive
-const toggle = document.querySelector(".nav__toggle");
-const nav = document.querySelector("[data-nav]");
+(function () {
+  const images = [
+    "assets/img/hero/01.jpg",
+    "assets/img/hero/02.jpg",
+    "assets/img/hero/03.jpg",
+    "assets/img/hero/04.jpg",
+  ];
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(open));
-  });
-
-  // Cerrar menú al hacer click en un link (mobile)
-  nav.querySelectorAll("a").forEach(a => {
-    a.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-// Año en footer
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// UX de formulario (para Formspree u otro endpoint)
-const form = document.getElementById("contactForm");
-const note = document.getElementById("formNote");
-
-if (form && note) {
-  form.addEventListener("submit", async (e) => {
-    // Si querés envío tradicional, borrá todo este handler.
-    e.preventDefault();
-
-    note.textContent = "Enviando…";
-
-    try {
-      const res = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { "Accept": "application/json" }
-      });
-
-      if (res.ok) {
-        form.reset();
-        note.textContent = "Listo. Te respondemos a la brevedad ✅";
-      } else {
-        note.textContent = "No se pudo enviar. Probá de nuevo o escribinos por WhatsApp.";
-      }
-    } catch {
-      note.textContent = "Error de red. Probá de nuevo o escribinos por WhatsApp.";
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
     }
-  });
-}
+    return a;
+  }
+
+  const order = shuffle(images);
+  let idx = 0;
+
+  const slideA = document.querySelector(".hero__slide--a");
+  const slideB = document.querySelector(".hero__slide--b");
+
+  if (!slideA || !slideB || order.length === 0) return;
+
+  // Preload
+  order.forEach((src) => { const img = new Image(); img.src = src; });
+
+  // Init
+  slideA.style.backgroundImage = `url("${order[idx]}")`;
+  slideA.classList.add("is-visible");
+
+  let showingA = true;
+
+  function next() {
+    idx = (idx + 1) % order.length;
+    const src = order[idx];
+
+    const show = showingA ? slideB : slideA;
+    const hide = showingA ? slideA : slideB;
+
+    show.style.backgroundImage = `url("${src}")`;
+    show.classList.add("is-visible");
+    hide.classList.remove("is-visible");
+
+    showingA = !showingA;
+  }
+
+  // cada 6s
+  setInterval(next, 6000);
+})();

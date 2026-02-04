@@ -20,7 +20,7 @@
 html{ scroll-behavior:smooth; }
 body{
   margin:0;
-  font-family:"Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family:"Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;F
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
@@ -334,20 +334,23 @@ p{ line-height:1.72; margin:0 0 12px; }
 .profile{
   background: transparent;
 }
-.profile__frame{
+.profile_frame{
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   padding: 14px;
   margin-bottom: 12px;
+  overflow: hidden;
 }
-.profile__frame img{
-  width:100%;
-  height:auto;
-  display:block;
+.profile_frame img{
+  width: 100%;
+  height: 100%;
+  display: block;
   border-radius: 14px;
   border: 1px solid var(--line);
+  object-fit: cover;
+  object-position: center;
 }
 .profile__placeholder{
   aspect-ratio: 4/5;
@@ -564,3 +567,4 @@ input:focus, select:focus, textarea:focus{
   .hero--slideshow{ min-height: 620px; padding-top: 96px; }
   .hero__quick{ grid-template-columns: 1fr; }
 }
+

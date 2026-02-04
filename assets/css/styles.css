@@ -344,14 +344,20 @@ p{ line-height:1.72; margin:0 0 12px; }
   overflow: hidden;
 }
 .profile_frame img{
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  display: block;
+  aspect-ratio: 4/5;
   border-radius: 14px;
-  border: 1px solid var(--line);
-  object-fit: cover;
-  object-position: 50% 20%;
+  border: 1px dashed rgba(15,42,58,.25);
+  background:
+    radial-gradient(600px 320px at 20% 20%, rgba(15,42,58,.06), transparent 60%),
+    radial-gradient(600px 320px at 80% 20%, rgba(91,75,138,.10), transparent 60%),
+    #fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-align:center;
+  padding: 18px;
 }
 .profile__placeholder{
   aspect-ratio: 4/5;
@@ -568,5 +574,6 @@ input:focus, select:focus, textarea:focus{
   .hero--slideshow{ min-height: 620px; padding-top: 96px; }
   .hero__quick{ grid-template-columns: 1fr; }
 }
+
 
 

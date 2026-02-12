@@ -351,6 +351,7 @@ p{ line-height:1.75; margin:0 0 12px; }
   display:grid;
   gap: 12px;
 }
+
 .acc{
   background: var(--surface);
   border: 1px solid var(--line);
@@ -358,18 +359,21 @@ p{ line-height:1.75; margin:0 0 12px; }
   box-shadow: var(--shadow-soft);
   overflow:hidden;
 }
+
+/* ✅ CABECERA: alineada a la izquierda */
 .acc__sum{
   list-style:none;
   cursor:pointer;
   padding: 16px 16px;
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-start; /* antes: center */
   gap: 12px;
-  text-align:center;
+  text-align:left;            /* antes: center */
   position: relative;
 }
 .acc__sum::-webkit-details-marker{ display:none; }
+
 .acc__icon{
   width:42px; height:42px;
   border-radius: 14px;
@@ -380,6 +384,8 @@ p{ line-height:1.75; margin:0 0 12px; }
   color: var(--blue);
   flex: 0 0 auto;
 }
+
+/* ✅ TITULO: a la izquierda (y que ocupe espacio) */
 .acc__title{
   font-family:"Inter", system-ui, sans-serif;
   font-weight: 600;
@@ -387,7 +393,11 @@ p{ line-height:1.75; margin:0 0 12px; }
   text-transform: uppercase;
   color: var(--blue);
   font-size: 13px;
+  text-align:left;
+  flex: 1; /* empuja la flecha a la derecha sin centrar todo */
 }
+
+/* flecha a la derecha ok */
 .acc__chev{
   position:absolute;
   right: 16px;
@@ -400,12 +410,14 @@ p{ line-height:1.75; margin:0 0 12px; }
 }
 details[open] .acc__chev{ transform: rotate(225deg); }
 
+/* ✅ CUERPO: alineado a la izquierda */
 .acc__body{
   padding: 0 18px 18px;
   color: var(--muted);
   line-height: 1.75;
-  text-align:center;
+  text-align:left; /* antes: center */
 }
+
 
 /* Contact */
 .contact{
@@ -564,3 +576,4 @@ input:focus, select:focus, textarea:focus{
   }
   .nav__checkbox:checked ~ .nav{ display:flex; }
 }
+

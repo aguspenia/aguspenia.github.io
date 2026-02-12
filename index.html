@@ -3,174 +3,141 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Estudio Jurídico | Dra. Camila Ayelén Sierra</title>
-  <meta name="description" content="Asesoramiento jurídico integral y personalizado. Atención directa, clara y profesional." />
-  <meta name="theme-color" content="#0f2a3a" />
+  <title>Estudio Jurídico Sierra | Dra. Camila Ayelén Sierra</title>
+  <meta name="description" content="Asesoramiento legal integral y personalizado. Atención directa, comunicación clara y seguimiento del caso." />
+  <meta name="theme-color" content="#0b0b0f" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body id="top">
-  <!-- Header -->
-  <header class="header">
+
+  <!-- HEADER -->
+  <header class="header" aria-label="Encabezado">
     <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Ir a Inicio">
-        <span class="brand__mark" aria-hidden="true">CS</span>
-        <span class="brand__text">Dra. Camila Ayelén Sierra</span>
+        <span class="brand__mark" aria-hidden="true">ES</span>
+        <span class="brand__name">Estudio Jurídico Sierra</span>
       </a>
 
-      <!-- Menú mobile sin JS -->
-      <input class="nav__checkbox" type="checkbox" id="nav-toggle" />
-      <label class="nav__toggle" for="nav-toggle" aria-label="Abrir/cerrar menú">
-        <span></span><span></span><span></span>
-      </label>
-
       <nav class="nav" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#el-estudio">El Estudio</a>
-        <a href="#areas">Areas de practica</a>
-        <a href="#contacto" class="btn btn--sm">Contacto</a>
+        <a href="#inicio">INICIO</a>
+        <a href="#el-estudio">EL ESTUDIO</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a class="nav__cta" href="#contacto">CONTACTO</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <!-- INICIO / HERO con slideshow -->
-    <section class="hero hero--slideshow" id="inicio" aria-label="Inicio">
-      <div class="hero__slides" aria-hidden="true">
-        <div class="hero__slide hero__slide--a"></div>
-        <div class="hero__slide hero__slide--b"></div>
-      </div>
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-label="Inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker">Dra. Camila Ayelén Sierra</p>
 
-      <div class="hero__overlay" aria-hidden="true"></div>
-
-      <div class="container hero__content">
-        <div class="hero__left">
-          <div class="hero__brand">
-            <div class="hero__logo" aria-hidden="true">CS</div>
-            <div class="hero__brandText">
-              <div class="hero__brandName">Dra. Camila Ayelén Sierra</div>
-              <div class="hero__brandSub">Estudio Jurídico</div>
-            </div>
-          </div>
-
-          <h1 class="hero__title">Asesoramiento jurídico integral y personalizado</h1>
+          <h1 class="hero__title">Asesoramiento legal integral y personalizado</h1>
 
           <div class="hero__chips" aria-label="Características">
             <span class="chip">Atención directa</span>
             <span class="chip">Comunicación clara</span>
             <span class="chip">Seguimiento del caso</span>
           </div>
-        </div>
 
-        <div class="hero__right">
-          <p class="hero__tagline">
-            Excelencia, claridad e inmediatez en cada solución jurídica
-          </p>
-
-          <div class="hero__cta">
-            <a class="btn" href="#contacto">Solicitar consulta</a>
-            <a class="btn btn--ghost" href="#areas">Ver áreas</a>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#contacto" aria-label="Ir a Contacto">Contacto</a>
           </div>
         </div>
       </div>
 
-      <!-- Cards rápidas debajo (estilo referencia) -->
-      <div class="container hero__quick">
-        <a class="quickCard" href="#areas">
-          <span class="quickCard__icon" aria-hidden="true">🚗</span>
-          <span class="quickCard__text">Accidentes de Tránsito</span>
-        </a>
-        <a class="quickCard" href="#areas">
-          <span class="quickCard__icon" aria-hidden="true">🛡️</span>
-          <span class="quickCard__text">Amparos de Salud</span>
-        </a>
-        <a class="quickCard" href="#areas">
-          <span class="quickCard__icon" aria-hidden="true">🧾</span>
-          <span class="quickCard__text">Contratos</span>
-        </a>
-        <a class="quickCard" href="#areas">
-          <span class="quickCard__icon" aria-hidden="true">👨‍👩‍👧‍👦</span>
-          <span class="quickCard__text">Derecho de Familia</span>
-        </a>
-      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
     </section>
 
     <!-- EL ESTUDIO -->
-    <section class="section" id="el-estudio">
+    <section class="section" id="el-estudio" aria-label="El Estudio">
       <div class="container">
         <div class="section__head">
-          <div class="section-title">
-            <span class="sicon" aria-hidden="true">
-              <!-- edificio -->
-              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="El Estudio">
-                <path d="M4 21V5a2 2 0 0 1 2-2h8v18M14 9h4a2 2 0 0 1 2 2v10M8 7h2M8 11h2M8 15h2M16 13h2M16 17h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h2>El Estudio</h2>
+          <div class="section__titleRow">
+            <h2 class="section__title">EL ESTUDIO</h2>
+            <span class="section__line" aria-hidden="true"></span>
           </div>
         </div>
 
         <div class="two-col">
           <div class="panel">
             <p>
-              Nuestro Estudio Jurídico brinda asesoramiento legal integral y personalizado, con un enfoque claro, humano y profesional. La práctica se caracteriza por un trato cercano y una atención directa, entendiendo que cada situación legal requiere escucha, análisis y un acompañamiento responsable.
+              Nuestro Estudio Jurídico brinda asesoramiento legal integral y personalizado, con un enfoque claro, humano y profesional.
+              La práctica se caracteriza por un trato cercano y una atención directa, entendiendo que cada situación legal requiere escucha,
+              análisis y un acompañamiento responsable.
             </p>
             <p>
-              El estudio se encuentra a cargo de la Dra. Camila Ayelén Sierra, quien interviene personalmente en cada caso, acompañando a los clientes desde el primer contacto y durante todo el proceso legal. Esta modalidad de trabajo permite un seguimiento atento y una comunicación clara, orientada a que cada persona pueda comprender su situación y tomar decisiones informadas con tranquilidad.
+              El estudio se encuentra a cargo de la Dra. Camila Ayelén Sierra, quien interviene personalmente en cada caso,
+              acompañando a los clientes desde el primer contacto y durante todo el proceso legal. Esta modalidad de trabajo permite
+              un seguimiento atento y una comunicación clara, orientada a que cada persona pueda comprender su situación y tomar decisiones
+              informadas con tranquilidad.
             </p>
             <p>
-              La labor profesional se apoya en la confianza, la ética y el compromiso con las necesidades concretas de cada cliente, priorizando soluciones jurídicas claras, personalizadas y acordes a cada situación particular.
+              La labor profesional se apoya en la confianza, la ética y el compromiso con las necesidades concretas de cada cliente,
+              priorizando soluciones jurídicas claras, personalizadas y acordes a cada situación particular.
             </p>
           </div>
 
           <aside class="profile" aria-label="Perfil profesional">
             <div class="profile__frame">
-              <img class="profile_photo"
+              <img class="profile__photo"
                    src="assets/img/camila-sierra.jpg"
                    alt="Dra. Camila Ayelén Sierra"
                    loading="lazy">
-          
+            </div>
+
             <div class="facts">
               <div class="fact">
                 <div class="fact__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" class="ico-sm">
-                    <path d="M8 13V7a2 2 0 0 1 4 0v6M12 12V6a2 2 0 0 1 4 0v7M16 12V8a2 2 0 0 1 4 0v8c0 3-2 5-5 5H11c-3 0-5-2-5-5v-3a2 2 0 0 1 2-2h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Handshake -->
+                  <svg viewBox="0 0 24 24" class="ico" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 12l2-2a3 3 0 0 1 4 0l1 1a3 3 0 0 0 4 0l2-2"/>
+                    <path d="M2 14l5 5"/>
+                    <path d="M22 14l-5 5"/>
+                    <path d="M9 14l1 1a2 2 0 0 0 3 0l1-1"/>
                   </svg>
                 </div>
                 <div>
-                  <p class="fact__title">Atención directa</p>
-                  <p class="muted fact__text">Intervención personal en cada caso.</p>
+                  <p class="fact__title">ATENCIÓN DIRECTA</p>
+                  <p class="fact__text">Intervención personal en cada caso.</p>
                 </div>
               </div>
 
               <div class="fact">
                 <div class="fact__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" class="ico-sm">
-                    <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Chat -->
+                  <svg viewBox="0 0 24 24" class="ico" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                    <path d="M8 9h8M8 13h6"/>
                   </svg>
                 </div>
                 <div>
-                  <p class="fact__title">Comunicación clara</p>
-                  <p class="muted fact__text">Acompañamiento comprensible y responsable.</p>
+                  <p class="fact__title">COMUNICACIÓN CLARA</p>
+                  <p class="fact__text">Acompañamiento comprensible y responsable.</p>
                 </div>
               </div>
 
               <div class="fact">
                 <div class="fact__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" class="ico-sm">
-                    <path d="M12 2 20 6v7c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Shield -->
+                  <svg viewBox="0 0 24 24" class="ico" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 20 6v7c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-4z"/>
+                    <path d="M9 12l2 2 4-5"/>
                   </svg>
                 </div>
                 <div>
-                  <p class="fact__title">Ética y compromiso</p>
-                  <p class="muted fact__text">Confianza, responsabilidad y dedicación.</p>
+                  <p class="fact__title">ÉTICA Y COMPROMISO</p>
+                  <p class="fact__text">Confianza, responsabilidad y dedicación.</p>
                 </div>
               </div>
             </div>
@@ -179,222 +146,223 @@
       </div>
     </section>
 
-    <!-- AREAS DE PRACTICA -->
-    <section class="section section--soft" id="areas">
+    <!-- SERVICIOS (ACORDEÓN) -->
+    <section class="section section--soft" id="servicios" aria-label="Servicios">
       <div class="container">
         <div class="section__head">
-          <div class="section-title">
-            <span class="sicon" aria-hidden="true">
-              <!-- maletín -->
-              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Areas de practica">
-                <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h2>Areas de practica</h2>
+          <div class="section__titleRow">
+            <h2 class="section__title">SERVICIOS</h2>
+            <span class="section__line" aria-hidden="true"></span>
           </div>
+          <p class="section__subtitle">Seleccioná un área para ver el detalle.</p>
         </div>
 
-        <div class="grid areas">
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- auto -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M3 14v3a2 2 0 0 0 2 2h1m13-5v3a2 2 0 0 1-2 2h-1M6 14l1-4a3 3 0 0 1 3-2h4a3 3 0 0 1 3 2l1 4M5 14h14M7 19h0M17 19h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="accordion" role="list">
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Car -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 16l1-5a3 3 0 0 1 3-2h4a3 3 0 0 1 3 2l1 5"/>
+                  <path d="M5 16h14"/>
+                  <path d="M7.5 19h0M16.5 19h0"/>
+                  <path d="M4 16v2a2 2 0 0 0 2 2h1"/>
+                  <path d="M20 16v2a2 2 0 0 1-2 2h-1"/>
+                </svg>
+              </span>
+              <span class="acc__title">ACCIDENTES DE TRÁNSITO</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
+              Brindamos asesoramiento y representación legal en accidentes de tránsito, realizando reclamos judiciales y extrajudiciales ante compañías de seguros.
+              Acompañamos cada caso de manera personalizada, con claridad y compromiso, desde el primer contacto hasta la resolución del conflicto.
             </div>
-            <h3>Accidentes de Tránsito</h3>
-            <p class="muted">
-              Brindamos asesoramiento y representación legal en accidentes de tránsito, realizando reclamos judiciales y extrajudiciales ante compañías de seguros. Acompañamos cada caso de manera personalizada, con claridad y compromiso, desde el primer contacto hasta la resolución del conflicto.
-            </p>
-          </article>
+          </details>
 
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- casco -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M4 13a8 8 0 1 1 16 0v4H4v-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M20 17h-4a2 2 0 0 1-2-2v-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3>Accidentes Laborales</h3>
-            <p class="muted">
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Helmet -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 13a8 8 0 1 1 16 0v4H4v-4z"/>
+                  <path d="M20 17h-4a2 2 0 0 1-2-2v-2"/>
+                </svg>
+              </span>
+              <span class="acc__title">ACCIDENTES LABORALES</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
               Asistencia legal en casos de accidentes de trabajo y enfermedades laborales, orientada a la defensa de los derechos del trabajador y a la obtención de una reparación justa.
-            </p>
-          </article>
-
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- portafolio -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
             </div>
-            <h3>Derecho Laboral</h3>
-            <p class="muted">
+          </details>
+
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Briefcase -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1"/>
+                  <path d="M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z"/>
+                  <path d="M4 12h16"/>
+                </svg>
+              </span>
+              <span class="acc__title">DERECHO LABORAL</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
               Asesoramiento y representación en conflictos laborales, despidos, indemnizaciones y demás cuestiones vinculadas a la relación de trabajo, con una mirada profesional y responsable.
-            </p>
-          </article>
-
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- salud -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M12 21s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 9v6M9 12h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
             </div>
-            <h3>Amparos de Salud</h3>
-            <p class="muted">
-              Asesoramiento y representación en acciones de amparo de salud frente a obras sociales, prepagas y organismos de salud, con el objetivo de garantizar el acceso oportuno a prestaciones médicas, tratamientos y medicamentos.
-            </p>
-          </article>
+          </details>
 
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- carrito -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M6 6h15l-2 9H7L6 6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6 5 3H2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 20h0M17 20h0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Heart / Health -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7-4.4-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.6-9 9-9 9z"/>
+                  <path d="M12 9v6M9 12h6"/>
+                </svg>
+              </span>
+              <span class="acc__title">AMPAROS DE SALUD</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
+              Asesoramiento y representación en acciones de amparo de salud frente a obras sociales, prepagas y organismos de salud,
+              con el objetivo de garantizar el acceso oportuno a prestaciones médicas, tratamientos y medicamentos.
             </div>
-            <h3>Defensa del Consumidor</h3>
-            <p class="muted">
-              Asistencia legal en reclamos vinculados a relaciones de consumo, servicios deficientes, incumplimientos contractuales y prácticas abusivas, priorizando soluciones eficaces y la protección de los derechos del consumidor.
-            </p>
-          </article>
+          </details>
 
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- documento -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 11h6M9 15h6M9 19h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Cart -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 6h15l-2 9H7L6 6z"/>
+                  <path d="M6 6 5 3H2"/>
+                  <path d="M9 20h0M17 20h0"/>
+                </svg>
+              </span>
+              <span class="acc__title">DEFENSA DEL CONSUMIDOR</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
+              Asistencia legal en reclamos vinculados a relaciones de consumo, servicios deficientes, incumplimientos contractuales y prácticas abusivas,
+              priorizando soluciones eficaces y la protección de los derechos del consumidor.
             </div>
-            <h3>Contratos</h3>
-            <p class="muted">
+          </details>
+
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Document -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+                  <path d="M9 11h6M9 15h6M9 19h4"/>
+                </svg>
+              </span>
+              <span class="acc__title">CONTRATOS</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
               Redacción, revisión y asesoramiento en contratos civiles y comerciales, brindando soluciones claras y seguras para prevenir conflictos y proteger los intereses de las partes.
-            </p>
-          </article>
-
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- árbol -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M12 2v20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-                <path d="M7 7c0-2 2-4 5-4s5 2 5 4-2 4-5 4-5-2-5-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 16h8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-              </svg>
             </div>
-            <h3>Sucesiones</h3>
-            <p class="muted">
+          </details>
+
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Tree -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20"/>
+                  <path d="M7 7c0-2 2-4 5-4s5 2 5 4-2 4-5 4-5-2-5-4z"/>
+                  <path d="M8 16h8"/>
+                </svg>
+              </span>
+              <span class="acc__title">SUCESIONES</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
               Asesoramiento integral en procesos sucesorios, acompañando a los interesados de manera clara y ordenada en cada etapa del trámite.
-            </p>
-          </article>
-
-          <article class="area-card">
-            <div class="area-card__icon" aria-hidden="true">
-              <!-- familia -->
-              <svg viewBox="0 0 24 24" class="ico-sm">
-                <path d="M9 11a3 3 0 1 0-6 0v2a4 4 0 0 0 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21 11a3 3 0 1 0-6 0v2a4 4 0 0 1-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 10a3 3 0 1 0 4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 21v-2a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
             </div>
-            <h3>Derecho de Familia</h3>
-            <p class="muted">
-              Acompañamiento legal en conflictos familiares, como divorcios, alimentos, régimen de comunicación y cuidado personal, priorizando soluciones responsables y el bienestar de las personas involucradas.
-            </p>
-          </article>
+          </details>
+
+          <details class="acc" role="listitem">
+            <summary class="acc__sum">
+              <span class="acc__icon" aria-hidden="true">
+                <!-- Family -->
+                <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 11a3 3 0 1 0-6 0v2a4 4 0 0 0 4 4"/>
+                  <path d="M21 11a3 3 0 1 0-6 0v2a4 4 0 0 1-4 4"/>
+                  <path d="M10 10a3 3 0 1 0 4 0"/>
+                  <path d="M8 21v-2a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v2"/>
+                </svg>
+              </span>
+              <span class="acc__title">DERECHO DE FAMILIA</span>
+              <span class="acc__chev" aria-hidden="true">+</span>
+            </summary>
+            <div class="acc__body">
+              Acompañamiento legal en conflictos familiares, como divorcios, alimentos, régimen de comunicación y cuidado personal,
+              priorizando soluciones responsables y el bienestar de las personas involucradas.
+            </div>
+          </details>
         </div>
       </div>
     </section>
 
     <!-- CONTACTO -->
-    <section class="section" id="contacto">
+    <section class="section" id="contacto" aria-label="Contacto">
       <div class="container">
         <div class="section__head">
-          <div class="section-title">
-            <span class="sicon" aria-hidden="true">
-              <!-- mail -->
-              <svg viewBox="0 0 24 24" class="ico" role="img" aria-label="Contacto">
-                <path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 8l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h2>Contacto</h2>
+          <div class="section__titleRow">
+            <h2 class="section__title">CONTACTO</h2>
+            <span class="section__line" aria-hidden="true"></span>
           </div>
-          <p class="muted">Escribinos por WhatsApp o completá el formulario. Respondemos a la brevedad.</p>
+          <p class="section__subtitle">Escribinos por WhatsApp o por email.</p>
         </div>
 
         <div class="contact">
-          <div class="contact__panel">
-            <h3>Vías de contacto</h3>
+          <a class="contact__item" href="https://wa.me/5491130682608?text=Hola%2C%20quiero%20hacer%20una%20consulta."
+             target="_blank" rel="noopener">
+            <span class="contact__icon" aria-hidden="true">
+              <!-- WhatsApp-ish bubble -->
+              <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                <path d="M8 9h8M8 13h6"/>
+              </svg>
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">WHATSAPP</span>
+              <span class="contact__value">+54 9 11 3068-2608</span>
+            </span>
+          </a>
 
-            <div class="contact__items">
-              <a class="contact__item" href="https://wa.me/5491130682608?text=Hola%2C%20quiero%20hacer%20una%20consulta."
-                 target="_blank" rel="noopener">
-                <span class="contact__icon" aria-hidden="true">💬</span>
-                <span>
-                  <span class="contact__label">WhatsApp</span>
-                  <span class="contact__value">+5491130682608</span>
-                </span>
-              </a>
+          <a class="contact__item" href="mailto:consultas@estudiojuridicosierra.com.ar">
+            <span class="contact__icon" aria-hidden="true">
+              <!-- Mail -->
+              <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8"/>
+                <path d="M3 8l9 6 9-6"/>
+              </svg>
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">EMAIL</span>
+              <span class="contact__value">consultas@estudiojuridicosierra.com.ar</span>
+            </span>
+          </a>
 
-              <a class="contact__item" href="mailto:consultas@estudiojuridicosierra.com.ar">
-                <span class="contact__icon" aria-hidden="true">✉️</span>
-                <span>
-                  <span class="contact__label">Email</span>
-                  <span class="contact__value">consultas@estudiojuridicosierra.com.ar</span>
-                </span>
-              </a>
-            </div>
-
-            <div class="note">
-              <p class="muted">
-                No se publica dirección física. La atención puede coordinarse de forma online o en punto a convenir.
-              </p>
-            </div>
-          </div>
-
-          <form class="form" method="post" action="https://formspree.io/f/TU_ID_AQUI">
-            <label>
-              Nombre
-              <input name="nombre" type="text" autocomplete="name" required />
-            </label>
-
-            <label>
-              Email
-              <input name="email" type="email" autocomplete="email" required />
-            </label>
-
-            <label>
-              Consulta
-              <select name="tema" required>
-                <option value="" selected disabled>Seleccionar</option>
-                <option>Accidentes de Tránsito</option>
-                <option>Accidentes Laborales</option>
-                <option>Derecho Laboral</option>
-                <option>Amparos de Salud</option>
-                <option>Defensa del Consumidor</option>
-                <option>Contratos</option>
-                <option>Sucesiones</option>
-                <option>Derecho de Familia</option>
-                <option>Otro</option>
-              </select>
-            </label>
-
-            <label>
-              Mensaje
-              <textarea name="mensaje" rows="5" required placeholder="Describí brevemente tu consulta..."></textarea>
-            </label>
-
-            <button class="btn btn--wide" type="submit">Enviar</button>
-            <p class="form__note muted">Al enviar aceptás que te contactemos por los medios provistos.</p>
-          </form>
+          <a class="contact__item" href="mailto:dra.camilasierra@estudiojuridicosierra.com.ar">
+            <span class="contact__icon" aria-hidden="true">
+              <!-- Mail -->
+              <svg viewBox="0 0 24 24" class="ico-sm" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8"/>
+                <path d="M3 8l9 6 9-6"/>
+              </svg>
+            </span>
+            <span class="contact__text">
+              <span class="contact__label">ALIAS</span>
+              <span class="contact__value">dra.camilasierra@estudiojuridicosierra.com.ar</span>
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -403,25 +371,11 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="muted">© <span id="year"></span> Dra. Camila Ayelén Sierra. Todos los derechos reservados.</p>
-      <a class="muted" href="#inicio">Volver arriba ↑</a>
+      <p>© <span id="year"></span> Estudio Jurídico Sierra. Todos los derechos reservados.</p>
+      <a href="#inicio" class="footer__link">VOLVER ARRIBA ↑</a>
     </div>
   </footer>
 
-  <a class="wa-float"
-     href="https://wa.me/5491130682608?text=Hola%2C%20quiero%20hacer%20una%20consulta."
-     target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-    WhatsApp
-  </a>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-  <script src="assets/js/hero-rotator.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
-
-
-
-
-

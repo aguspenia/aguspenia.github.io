@@ -1,14 +1,8 @@
-// assets/js/hero-rotator.js
 (function () {
-  // Poné tus imágenes acá (3 o más). Deben existir en tu repo.
-  // Ejemplo de rutas:
-  // assets/img/hero/01.jpg
-  // assets/img/hero/02.jpg
-  // assets/img/hero/03.jpg
   const images = [
     "assets/img/hero/01.jpg",
     "assets/img/hero/02.jpg",
-    "assets/img/hero/03.jpg"
+    "assets/img/hero/03.jpg",
   ];
 
   function shuffle(arr) {
@@ -33,6 +27,7 @@
   // Init
   slideA.style.backgroundImage = `url("${order[idx]}")`;
   slideA.classList.add("is-visible");
+
   let showingA = true;
 
   function next() {
@@ -49,6 +44,5 @@
     showingA = !showingA;
   }
 
-  // Cambia cada 6 segundos
-  setInterval(next, 6000);
+  setInterval(next, 6500);
 })();

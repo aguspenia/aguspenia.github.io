@@ -1,48 +1,27 @@
-(function () {
-  const images = [
-    "assets/img/hero/01.jpg",
-    "assets/img/hero/02.jpg",
-    "assets/img/hero/03.jpg",
-  ];
+// NAVBAR SCROLL EFFECT
+window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
 
-  function shuffle(arr) {
-    const a = arr.slice();
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
+// HERO BACKGROUND ROTATION
+const heroImages = [
+  "assets/img/hero1.jpg",
+  "assets/img/hero2.jpg",
+  "assets/img/hero3.jpg"
+];
 
-  const order = shuffle(images);
-  let idx = 0;
+let current = 0;
 
-  const slideA = document.querySelector(".hero__slide--a");
-  const slideB = document.querySelector(".hero__slide--b");
-  if (!slideA || !slideB || order.length === 0) return;
+setInterval(() => {
+  current = (current + 1) % heroImages.length;
+  document.querySelector(".hero").style.backgroundImage =
+    `url('${heroImages[current]}')`;
+}, 6000);
 
-  // Preload
-  order.forEach((src) => { const img = new Image(); img.src = src; });
-
-  // Init
-  slideA.style.backgroundImage = `url("${order[idx]}")`;
-  slideA.classList.add("is-visible");
-
-  let showingA = true;
-
-  function next() {
-    idx = (idx + 1) % order.length;
-    const src = order[idx];
-
-    const show = showingA ? slideB : slideA;
-    const hide = showingA ? slideA : slideB;
-
-    show.style.backgroundImage = `url("${src}")`;
-    show.classList.add("is-visible");
-    hide.classList.remove("is-visible");
-
-    showingA = !showingA;
-  }
-
-  setInterval(next, 6500);
-})();
+// FORM SUCCESS
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  this.style.display = "none";
+  document.getElementById("formSuccess").style.display = "block";
+});

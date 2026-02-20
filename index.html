@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Estudio Jurídico Sierra</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts exactas estilo React -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
+
 <nav id="navbar" class="navbar">
-  <div class="nav-container">
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo">
-      <div class="logo-text">
-        <span class="logo-main">SIERRA</span>
-        <span class="logo-sub">ESTUDIO JURÍDICO</span>
+  <div class="nav-inner">
+
+    <a href="#inicio" class="nav-logo">
+      <img src="assets/img/logo.png" alt="Sierra Logo">
+      <div class="nav-brand">
+        <span class="brand-main">SIERRA</span>
+        <span class="brand-sub">ESTUDIO JURÍDICO</span>
       </div>
-    </div>
+    </a>
 
     <div class="nav-links">
       <a href="#inicio">INICIO</a>
@@ -28,12 +31,23 @@
       <a href="#servicios">SERVICIOS</a>
       <a href="#contacto">CONTACTO</a>
     </div>
+
+    <button id="mobileToggle" class="mobile-toggle">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#inicio">INICIO</a>
+    <a href="#el-estudio">EL ESTUDIO</a>
+    <a href="#servicios">SERVICIOS</a>
+    <a href="#contacto">CONTACTO</a>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
+
 <section id="inicio" class="hero">
   <div class="hero-overlay"></div>
+  <div class="hero-bg"></div>
 
   <div class="hero-content">
     <span class="hero-location">BUENOS AIRES • ARGENTINA</span>
@@ -43,9 +57,9 @@
       INTEGRAL Y PERSONALIZADO
     </h1>
 
-    <p class="hero-sub">SIERRA ESTUDIO JURÍDICO</p>
+    <p class="hero-subtitle">SIERRA ESTUDIO JURÍDICO</p>
 
-    <div class="hero-line"></div>
+    <div class="hero-divider"></div>
 
     <a href="#contacto" class="hero-btn">
       SOLICITAR CONSULTA
@@ -53,29 +67,34 @@
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
+
 <section id="el-estudio" class="about">
-  <div class="about-container">
+  <div class="about-grid">
+
     <div class="about-image">
-      <img src="assets/img/dra.jpg" alt="Dra Sierra">
+      <img src="assets/img/dra.jpg" alt="Dra. Sierra">
     </div>
 
-    <div class="about-text">
+    <div class="about-content">
       <span class="section-tag">EL ESTUDIO</span>
       <h2>Compromiso y excelencia</h2>
       <p>
-        Nuestro Estudio Jurídico brinda asesoramiento integral,
-        acompañando cada caso con responsabilidad y dedicación.
+        Nuestro Estudio Jurídico brinda asesoramiento legal integral y personalizado,
+        acompañando cada caso con responsabilidad y dedicación profesional.
       </p>
     </div>
+
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
+
 <section id="servicios" class="services">
   <div class="services-header">
     <span class="section-tag">SERVICIOS</span>
     <h2>Áreas de práctica</h2>
+    <div class="services-divider"></div>
   </div>
 
   <div class="services-grid">
@@ -105,30 +124,42 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
+
 <section id="contacto" class="contact">
-  <div class="contact-container">
-    <h2>Contáctenos</h2>
+  <div class="contact-grid">
 
-    <form id="contactForm">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">ENVIAR</button>
-    </form>
-
-    <div id="formSuccess" class="form-success">
-      ¡Consulta enviada correctamente!
+    <div class="contact-info">
+      <span class="section-tag">CONTACTO</span>
+      <h2>Estamos para ayudar</h2>
+      <div class="contact-divider"></div>
+      <p>Buenos Aires, Argentina</p>
+      <p>+54 9 11 3068 2608</p>
+      <p>consultas@estudiojuridicosierra.com.ar</p>
     </div>
+
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Mensaje" required></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+
+      <div id="formSuccess" class="form-success">
+        ¡Consulta enviada correctamente!
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
   © 2025 Estudio Jurídico Sierra
 </footer>
 
-<!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/5491130682608" class="whatsapp-btn" target="_blank">
   WA
 </a>
